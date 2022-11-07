@@ -4,7 +4,7 @@ build:rm
 
 .PHONY: rm
 rm:
-	docker rm go-app-container
+	docker rm -f go-app-container || true
 
 .PHONY: up
 up:
